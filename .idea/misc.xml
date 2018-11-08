@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../micro-services/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/eureka-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/lib-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/micro-service-message/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/micro-service-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/micro-service-user/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../micro-services/micro-service-areas/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../micro-services/out" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/../micro-services/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/../micro-services/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/lib-common/lib-common.iml" filepath="$PROJECT_DIR$/../micro-services/lib-common/lib-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/micro-service-areas/micro-service-areas.iml" filepath="$PROJECT_DIR$/../micro-services/micro-service-areas/micro-service-areas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/micro-service-message/micro-service-message.iml" filepath="$PROJECT_DIR$/../micro-services/micro-service-message/micro-service-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/micro-service-oss/micro-service-oss.iml" filepath="$PROJECT_DIR$/../micro-services/micro-service-oss/micro-service-oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/micro-service-user/micro-service-user.iml" filepath="$PROJECT_DIR$/../micro-services/micro-service-user/micro-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../micro-services/micro-services.iml" filepath="$PROJECT_DIR$/../micro-services/micro-services.iml" />
+    </modules>
+  </component>
+</project>

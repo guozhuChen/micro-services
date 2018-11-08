@@ -1,0 +1,212 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: upin server
+  description: upin server API
+host: localhost
+produces:
+  - application/json
+schemes:
+  - http
+
+paths:
+  /message/sendTemplateCode:
+    post:
+      tags:
+        - message
+      summary: send message
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/MessageRequestDTO'
+      responses:
+        '200':
+          description: success
+          schema:
+            $ref: '#/definitions/CommonResponseDTO'
+
+  /oss/upload:
+    post:
+      tags:
+        - oss
+      summary: upload
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: file
+          type: file
+          description: The file to upload.
+      responses:
+        '200':
+          description: success
+          schema:
+            $ref: '#/definitions/CommonResponseDTO'
+
+  /oss/timestampUrl:
+    get:
+      tags:
+        - oss
+      parameters:
+        - name: url
+          type: string
+          in: query
+          required: true
+      responses:
+        '200':
+          description: success
+          schema:
+            $ref: '#/definitions/CommonResponseDTO'
+
+
+definitions:
+  CommonResponseDTO:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+      detail:
+        type: string
+      data:
+        type: object
+
+  MessageRequestDTO:
+    type: object
+    properties:
+      accountNo:
+        type: string
+      massageType:
+        type: integer
+      templateCode:
+        type: integer
+
+  LoginDTO:
+    type: object
+    properties:
+      loginName:
+        type: string
+      password:
+        type: string
+      loginType:
+        type: integer
+        format: int32
+
+  LoginResponseDTO:
+    type: object
+    properties:
+      token:
+        type: string
+      user:
+        $ref: '#/definitions/UserDTO'
+
+  UserDTO:
+    type: object
+    properties:
+      id:
+        type: string
+      createdDate:
+        type: string
+      lastModifiedDate:
+        type: string
+      loginName:
+        type: string
+      password:
+        type: string
+      userTypeId:
+        type: string
+      rank:
+        type: integer
+        format: int32
+      status:
+        type: string
+      lastLoginDate:
+        type: string
+      userDetail:
+        $ref: '#/definitions/UserDetailDTO'
+      roles:
+        type: array
+        items:
+          $ref: '#/definitions/RoleDTO'
+
+  UserDetailDTO:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      gender:
+        type: string
+      birthDay:
+        type: string
+      cardType:
+        type: integer
+        format: int32
+      cardId:
+        type: string
+      phone:
+        type: string
+      email:
+        type: string
+      areaId:
+        type: string
+      address:
+        type: string
+      heardUrl:
+        type: string
+
+  RoleDTO:
+    type: object
+    properties:
+      id:
+        type: string
+      createdDate:
+        type: string
+      lastModifiedDate:
+        type: string
+      roleName:
+        type: string
+      parent:
+        $ref: '#/definitions/RoleDTO'
+      childrens:
+        type: array
+        items:
+          $ref: '#/definitions/RoleDTO'
+      description:
+        type: string
+      status:
+        type: string
+
+  AreasDTO:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      areaName:
+        type: string
+      pinYin:
+        type: string
+      shortName:
+        type: string
+      parent:
+        $ref: '#/definitions/AreasDTO'
+      childrens:
+        type: array
+        items:
+          $ref: '#/definitions/AreasDTO'
+      type:
+        type: string
+      flag:
+        type: boolean
+      lat:
+        type: number
+        format: double
+      lng:
+        type: number
+        format: double
