@@ -54,13 +54,7 @@ spring:
 # aliyun
 aliyun:
   sms:
-    product: Dysmsapi
-    domain: dysmsapi.aliyuncs.com
-    region-id: cn-hangzhou
-    end-point-name: cn-hangzhou
-    access-key-id: LTAIwO7OxIpcqBmC
-    access-key-secret: pBrivZm9Yi2CUE2UOKbSE2QM1DWhrv
-    sign-name: U品
+
 
 # 短信验证码有效时间 分钟
 code:
