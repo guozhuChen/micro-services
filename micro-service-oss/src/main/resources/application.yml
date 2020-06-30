@@ -47,9 +47,4 @@ spring:
 
 aliyun:
   oss:
-    end-point: oss-cn-shanghai.aliyuncs.com
-    access-key-id: LTAItGz4Y4NXEfN4
-    access-key-secret: 07oQ6e8xlUWXCOXzMQTPmJ58xnqFkF
-    bucket-name-public: upin-public
-    bucket-name-private: upin-private
-    expiration-hours: 1
+
